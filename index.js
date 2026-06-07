@@ -11,12 +11,6 @@ app.get("/", (req, res) => {
     });
 })
 
-app.get("/api/v1", (req, res) => {
-    return res.json({
-        message: "Hello Wrold from the production level code.."
-    });
-})
-
 app.listen(PORT, () => {
     console.log(`server is listening on http://localhost:${PORT}`)
 })
